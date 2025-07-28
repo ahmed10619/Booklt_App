@@ -1,5 +1,5 @@
 import 'package:bookly_app/Features/Home/presentation/view/widget/custom_appbar.dart';
-import 'package:bookly_app/Features/Home/presentation/view/widget/custom_list_view_item.dart';
+import 'package:bookly_app/Features/Home/presentation/view/widget/featured_list_books.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +11,7 @@ class HomeBodyView extends StatelessWidget {
     return const Column(
       children: [
         CustomAppBar(),
-        CustomListViewItem(),
+        FeaturesListBooks(),
       ],
     );
   }
