@@ -21,7 +21,7 @@ class HomeBodyView extends StatelessWidget {
           Gap(50),
           Text(
             "Best Saller",
-            style: Style.titleMedium,
+            style: Style.textFont20,
           ),
           BestSallerListViewItem(),
         ],
