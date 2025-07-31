@@ -1,3 +1,4 @@
+import 'package:bookly_app/Features/Home/presentation/view/widget/booking_rating.dart';
 import 'package:bookly_app/constants.dart';
 import 'package:bookly_app/core/utils/assets.dart';
 import 'package:bookly_app/core/utils/style.dart';
@@ -28,35 +29,40 @@ class BestSallerListViewItem extends StatelessWidget {
           ),
         ),
         const Gap(30),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            SizedBox(
-              width: MediaQuery.of(context).size.width * 0.5,
-              child: Text(
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                "Harry Potter and Goblet Of Fire",
-                style: Style.textFont22.copyWith(
-                  fontFamily: kGtSectraFine,
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                width: MediaQuery.of(context).size.width * 0.5,
+                child: Text(
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  "Harry Potter and Goblet Of Fire",
+                  style: Style.textFont22.copyWith(
+                    fontFamily: kGtSectraFine,
+                  ),
                 ),
               ),
-            ),
-            const Gap(4),
-            const Text(
-              "J.K Rowling",
-              style: Style.textFont15,
-            ),
-            const Gap(4),
-            Row(
-              children: [
-                Text(
-                  "19.99 €",
-                  style: Style.textFont22.copyWith(fontWeight: FontWeight.bold),
-                ),
-              ],
-            )
-          ],
+              const Gap(4),
+              const Text(
+                "J.K Rowling",
+                style: Style.textFont15,
+              ),
+              const Gap(4),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "19.99 €",
+                    style:
+                        Style.textFont22.copyWith(fontWeight: FontWeight.bold),
+                  ),
+                  const BookingRating(),
+                ],
+              )
+            ],
+          ),
         )
       ],
     );
