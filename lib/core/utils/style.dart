@@ -10,10 +10,9 @@ abstract class Style {
   static const textFont22 = TextStyle(
     fontSize: 22,
     fontWeight: FontWeight.normal,
-    fontFamily: kGtSectraFine,
   );
   static const textFont32 = TextStyle(
-    fontSize: 22,
+    fontSize: 32,
     fontWeight: FontWeight.normal,
     fontFamily: kGtSectraFine,
   );
