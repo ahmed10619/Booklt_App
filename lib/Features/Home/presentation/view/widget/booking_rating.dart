@@ -15,7 +15,7 @@ class BookingRating extends StatelessWidget {
       children: const [
         Icon(
           FontAwesomeIcons.solidStar,
-          color: Colors.amber,
+          color: Color(0xffFFDD4F),
           size: 16,
         ),
         Gap(7),
