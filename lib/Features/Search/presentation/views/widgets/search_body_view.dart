@@ -10,7 +10,7 @@ class SearchBodyView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.all(30),
+      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
       child: Column(
         children: [
           CustomTextField(),

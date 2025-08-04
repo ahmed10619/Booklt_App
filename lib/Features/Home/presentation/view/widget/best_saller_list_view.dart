@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'best_saller_list_view_item.dart';
+import 'books_list_view_item.dart';
 
 class BestSallerListView extends StatelessWidget {
   const BestSallerListView({super.key});
@@ -13,7 +13,7 @@ class BestSallerListView extends StatelessWidget {
       itemCount: 10,
       itemBuilder: (context, index) => const Padding(
         padding: EdgeInsets.symmetric(vertical: 10),
-        child: BestSallerListViewItem(),
+        child: BooksListViewItem(),
       ),
     );
   }
