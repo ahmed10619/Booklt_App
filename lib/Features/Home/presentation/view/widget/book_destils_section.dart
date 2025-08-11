@@ -37,6 +37,8 @@ class BookDetailsSection extends StatelessWidget {
         ),
         const Gap(18),
         const BookingRating(
+          rateCount: 0,
+          rateing: 0,
           mainAxisAlignment: MainAxisAlignment.center,
         ),
       ],

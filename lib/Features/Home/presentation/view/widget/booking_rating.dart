@@ -5,29 +5,34 @@ import 'package:gap/gap.dart';
 
 class BookingRating extends StatelessWidget {
   const BookingRating(
-      {super.key, this.mainAxisAlignment = MainAxisAlignment.start});
+      {super.key,
+      this.mainAxisAlignment = MainAxisAlignment.start,
+      required this.rateing,
+      required this.rateCount});
 
   final MainAxisAlignment mainAxisAlignment;
+  final int rateing;
+  final int rateCount;
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: mainAxisAlignment,
-      children: const [
-        Icon(
+      children: [
+        const Icon(
           FontAwesomeIcons.solidStar,
           color: Color(0xffFFDD4F),
           size: 16,
         ),
-        Gap(7),
+        const Gap(7),
         Text(
-          "4.9",
+          "$rateing",
           style: Style.textFont17,
         ),
-        Gap(5),
+        const Gap(5),
         Opacity(
           opacity: 0.5,
           child: Text(
-            "(254)",
+            "($rateCount)",
             style: Style.textFont15,
           ),
         ),
